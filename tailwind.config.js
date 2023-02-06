@@ -49,10 +49,16 @@ module.exports = {
       "10px": "10px",
     },
 
+    screens: {
+      dsk: "1440px",
+      // => @media (min-width: 1440px) { ... }
+    },
+
     extend: {
       padding: {
         "15px": "15px",
         "24px": "24px",
+        "32px": "32px",
         "92px": "92px",
       },
 
@@ -68,6 +74,15 @@ module.exports = {
         mobile: "343px",
         "295px": "295px",
       },
+
+      width: {
+        "237px": "237px",
+      },
+
+      backgroundImage: (theme) => ({
+        "picture-sm": "url('/images/image-product-mobile.jpg')",
+        "picture-lg": "url('/images/image-product-desktop.jpg')",
+      }),
     },
   },
   plugins: [],

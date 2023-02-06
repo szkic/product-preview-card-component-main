@@ -22,46 +22,58 @@
 
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-cream pt-10">
-    <div class="bg-white max-w-mobile mx-auto rounded-10px">
-      <img
-        src="/images/image-product-mobile.jpg"
-        width="343"
-        height="240"
-        class="rounded-t-10px"
-      />
-      <div class="p-24px">
-        <p
-          class="text-xs leading-tight font-medium tracking-widest text-grayishBlue mb-3"
-        >
-          Perfume
-        </p>
-        <h1
-          class="font-serif font-bold text-4xl leading-none text-darkBlue mb-4"
-        >
-          Gabrielle Essence Eau De Parfum
-        </h1>
-        <p class="text-sm leading-relaxed text-grayishBlue mb-6">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="flex items-center gap-19 mb-5">
-          <p class="font-serif font-bold text-4xl text-cyan">$149.99</p>
-          <p class="text-ssm leading-177 line-through">$169.99</p>
+  <body class="bg-cream">
+    <div class="flex h-screen justify-center items-center flex-col">
+      <div class="max-w-mobile rounded-10px dsk:flex justify-center">
+        <img
+          src="/images/image-product-mobile.jpg"
+          width="343"
+          height="240"
+          class="rounded-t-10px dsk:hidden"
+        />
+        <img
+          src="/images/image-product-desktop.jpg"
+          width="300"
+          height="450"
+          class="hidden dsk:block rounded-l-10px"
+        />
+        <div class="p-24px bg-white dsk:p-32px rounded-r-10px">
+          <p
+            class="text-xs leading-tight font-medium tracking-widest text-grayishBlue mb-3 dsk:mb-5"
+          >
+            Perfume
+          </p>
+          <h1
+            class="font-serif font-bold text-4xl leading-none text-darkBlue mb-4 dsk:mb-6"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="text-sm leading-relaxed text-grayishBlue mb-6 dsk:w-237px dsk:mb-7"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex items-center gap-19 mb-5 dsk:mb-8">
+            <p class="font-serif font-bold text-4xl text-cyan">$149.99</p>
+            <p class="text-ssm leading-177 line-through text-grayishBlue">
+              $169.99
+            </p>
+          </div>
+          <button
+            type="button"
+            class="bg-cyan text-sm text-white w-full h-12 rounded-8"
+          >
+            Add to Cart
+          </button>
         </div>
-        <button
-          type="button"
-          class="bg-cyan text-sm text-white w-full h-12 rounded-8"
-        >
-          Add to Cart
-        </button>
       </div>
-    </div>
-    <div class="max-w-mobile mx-auto text-xxs text-center mt-2">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">B. Szkiłądź</a>.
+      <div class="mx-auto text-xxs text-center mt-2">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">B. Szkiłądź</a>.
+      </div>
     </div>
   </body>
 </html>
